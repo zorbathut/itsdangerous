@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>It's Dangerous To Come Along Dev</name>
+  <author>ZorbaTHut</author>
+  <url>https://github.com/zorbathut/itsdangerous</url>
+  <description>Assigned animals no longer follow drafted pawns.</description>
+  <targetVersion>0.15.0</targetVersion>
+</ModMetaData>
