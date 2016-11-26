@@ -21,6 +21,16 @@ namespace ItsDangerous
                         return;
                     }
                 }
+
+                {
+                    MethodInfo method1 = typeof(RimWorld.ForbidUtility).GetMethod("CaresAboutForbidden", BindingFlags.Static | BindingFlags.NonPublic);
+                    MethodInfo method2 = typeof(ForbidUtility_Detour).GetMethod("CaresAboutForbidden", BindingFlags.Static | BindingFlags.Public);
+                    if (!Detours.TryDetourFromTo(method1, method2))
+                    {
+                        Log.Error("EVERYTHING IS BROKEN 1");
+                        return;
+                    }
+                }
             }
             catch (Exception)
             {
